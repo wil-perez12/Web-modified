@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preguntas Frecuentes | D’ Kia Trenzas</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="../js/scripts.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>D’ Kia Trenzas</h1>
+    <nav>
+      <a href="../index.html">Inicio</a>
+      <a href="faq.html" class="active">FAQ</a>
+      <!-- otros enlaces -->
+    </nav>
+  </header>
+
+  <main>
+    <section id="faq">
+      <h2>Preguntas Frecuentes</h2>
+      <div class="faq-item">
+        <button onclick="toggleAnswer('answer1')">¿Cómo puedo agendar una cita?</button>
+        <div id="answer1" class="modal">
+          <p>Puedes agendar directamente desde la sección de contacto o llamarnos al número indicado.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button onclick="toggleAnswer('answer2')">¿Qué estilos de trenzas ofrecen?</button>
+        <div id="answer2" class="modal">
+          <p>Ofrecemos estilos africanos, caribeños, personalizados y más. Visita nuestra galería.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 D’ Kia Trenzas</p>
+  </footer>
+</body>
+</html>

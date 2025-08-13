@@ -1,0 +1,98 @@
+:root {
+  --color-fondo: #fef8f4;
+  --color-texto: #4b2e2e;
+  --color-rosa: #f4c2c2;
+  --color-acento: #e8a6a1;
+  --color-borde: #c8b6a6;
+  --fuente-principal: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: var(--fuente-principal);
+}
+
+/* 🧱 Estructura del header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-acento); /* Rosa terracota */
+  padding: 1rem;
+  position: relative;
+}
+
+/* ✨ Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-texto); /* Marrón profundo */
+}
+
+/* 🍔 Botón hamburguesa */
+.menu-toggle {
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: var(--color-texto);
+  cursor: pointer;
+  display: none; /* Oculto en escritorio */
+}
+
+/* 📋 Menú principal */
+nav.menu ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav.menu a {
+  color: var(--color-texto);
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+nav.menu a:hover {
+  background-color: var(--color-rosa); /* Rosa claro */
+  color: #fff;
+}
+
+/* 📱 Responsive: menú hamburguesa */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Mostrar botón en móviles */
+  }
+
+  nav.menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-acento);
+    z-index: 10;
+  }
+
+  nav.menu.active {
+    display: block;
+  }
+
+  nav.menu ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  nav.menu a {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+}

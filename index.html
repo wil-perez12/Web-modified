@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D' Kia Trenzas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>D' Kia Trenzas</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li>
+          <label for="menu-desplegable">Más</label>
+          <select id="menu-desplegable">
+            <option value="equipo">Nuestro equipo</option>
+            <option value="ubicacion">Ubicación</option>
+            <option value="reserva">Reservar cita</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio">
+      <h2>Bienvenida</h2>
+      <p>Especialistas en trenzas africanas con estilo, cultura y elegancia.</p>
+      <video controls width="300">
+        <source src="video-promocional.mp4" type="video/mp4" />
+        Tu navegador no soporta el video.
+      </video>
+    </section>
+
+    <section id="servicios">
+      <h2>Servicios</h2>
+      <ul>
+        <li>Trenzas tradicionales</li>
+        <li>Trenzas con extensiones</li>
+        <li>Diseños personalizados</li>
+      </ul>
+      <canvas id="dibujo" width="300" height="150">Tu navegador no soporta canvas.</canvas>
+    </section>
+
+    <section id="galeria">
+      <h2>Galería</h2>
+      <img src="trenza1.jpg" alt="Trenza estilo 1" />
+      <img src="trenza2.jpg" alt="Trenza estilo 2" />
+    </section>
+
+    <section id="contacto">
+      <h2>Contáctanos</h2>
+      <form id="formulario-contacto">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+      <progress value="0" max="100" id="progreso-carga"></progress>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 D' Kia Trenzas. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
